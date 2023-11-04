@@ -3,13 +3,10 @@
 ### Contents:
 
 ### Description
-Building a nginx docker image for static html page. Deploy the image as a pod and expose it so that it is accesible from the node. Kubernetes implmentation using Minikube single node cluster on Ubuntu VM on VMware ESXi.
+Introductory to deploy a web service as a Kubernetes pod. First by creating a nginx docker image. Then deploy Kubernetes pod and service to make the service available. Kubernetes implmentation using Minikube single node cluster on Ubuntu VM.
 
 ### Pre-requisite
 Ubuntu 20.04 Desktop
 
 ### Setting Up
-
-
-This site was built using [GitHub Pages](https://pages.github.com/).
 
