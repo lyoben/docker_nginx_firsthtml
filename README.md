@@ -74,7 +74,7 @@ spec:
     imagePullPolicy: Never
 EOF
 ```
-Create service definition file
+Create service of type nodePort on port 30080
 ```
 cat << EOF > simplehtml-svc.yaml
 apiVersion: v1
@@ -85,7 +85,7 @@ metadata:
   name: simplehtml-svc
 spec:
   ports:
-  - name: 80-80
+  - name: http
     nodePort: 30080
     port: 80
     protocol: TCP
@@ -95,4 +95,6 @@ spec:
   type: NodePort
 EOF
 ```
+
+
 
