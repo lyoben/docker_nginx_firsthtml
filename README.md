@@ -96,5 +96,13 @@ spec:
 EOF
 ```
 
+```
+blow@abra:~/docker-nginx$ ip link show type bridge
+4: docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN mode DEFAULT group default 
+    link/ether 02:42:03:98:a4:0b brd ff:ff:ff:ff:ff:ff
+5: br-3d7af3f93112: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP mode DEFAULT group default 
+    link/ether 02:42:b7:e4:e2:d9 brd ff:ff:ff:ff:ff:ff
+```
+
 
 
