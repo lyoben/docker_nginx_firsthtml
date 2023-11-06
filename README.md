@@ -96,7 +96,7 @@ spec:
 EOF
 ```
 
-Check the Service endpoint is correctly assosciated to the Pod
+Check Service endpoint is correctly assosciated to Pod
 
 
 ```
@@ -122,13 +122,13 @@ Session Affinity:         None
 External Traffic Policy:  Cluster
 Events:                   <none>
 ```
-
+Get the node ip address
 ```
 blow@abra:~/docker-nginx$ k get node -o wide
 NAME       STATUS   ROLES           AGE   VERSION   INTERNAL-IP    EXTERNAL-IP   OS-IMAGE             KERNEL-VERSION      CONTAINER-RUNTIME
 minikube   Ready    control-plane   12d   v1.27.4   192.168.49.2   <none>        Ubuntu 22.04.2 LTS   5.15.0-87-generic   docker://24.0.4
 ```
-
+Access the web service via node ip on port 30080
 ![dockersimple](https://github.com/lyoben/docker_nginx_simplehtml/assets/81006481/b586a787-fdb2-44ed-9013-04f6ef9c0b13)
 
 
