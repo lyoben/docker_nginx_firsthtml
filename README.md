@@ -97,21 +97,11 @@ EOF
 ```
 
 ```
-blow@abra:~/docker-nginx$ ip link show type bridge
-4: docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN mode DEFAULT group default 
-    link/ether 02:42:03:98:a4:0b brd ff:ff:ff:ff:ff:ff
-5: br-3d7af3f93112: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP mode DEFAULT group default 
-    link/ether 02:42:b7:e4:e2:d9 brd ff:ff:ff:ff:ff:ff
-
-blow@abra:~/docker-nginx$ ip addr show br-3d7af3f93112
-5: br-3d7af3f93112: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default 
-    link/ether 02:42:b7:e4:e2:d9 brd ff:ff:ff:ff:ff:ff
-    inet 192.168.49.1/24 brd 192.168.49.255 scope global br-3d7af3f93112
-       valid_lft forever preferred_lft forever
-    inet6 fe80::42:b7ff:fee4:e2d9/64 scope link 
-       valid_lft forever preferred_lft forever
-
+blow@abra:~/docker-nginx$ k get node -o wide
+NAME       STATUS   ROLES           AGE   VERSION   INTERNAL-IP    EXTERNAL-IP   OS-IMAGE             KERNEL-VERSION      CONTAINER-RUNTIME
+minikube   Ready    control-plane   12d   v1.27.4   192.168.49.2   <none>        Ubuntu 22.04.2 LTS   5.15.0-87-generic   docker://24.0.4
 ```
 
+![dockersimple](https://github.com/lyoben/docker_nginx_simplehtml/assets/81006481/b586a787-fdb2-44ed-9013-04f6ef9c0b13)
 
 
