@@ -99,7 +99,7 @@ EOF
 ```
 blow@abra:~/docker-nginx$ k get pod -o wide
 NAME         READY   STATUS    RESTARTS   AGE   IP            NODE       NOMINATED NODE   READINESS GATES
-simplehtml   1/1     Running   0          46h   *10.244.0.12*   minikube   <none>           <none>
+simplehtml   1/1     Running   0          46h   10.244.0.12   minikube   <none>           <none>
 blow@abra:~/docker-nginx$ k describe svc simplehtml-svc 
 Name:                     simplehtml-svc
 Namespace:                default
@@ -114,7 +114,7 @@ IPs:                      10.97.222.121
 Port:                     http  80/TCP
 TargetPort:               80/TCP
 NodePort:                 http  30080/TCP
-Endpoints:                *10.244.0.12:80*
+Endpoints:                10.244.0.12:80
 Session Affinity:         None
 External Traffic Policy:  Cluster
 Events:                   <none>
