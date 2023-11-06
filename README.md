@@ -11,7 +11,8 @@ Ubuntu 20.04 Desktop
 ### Installation
 1. Install Docker by following Step 1 — Installing Docker and Step 2 — Executing the Docker Command Without Sudo in this [article](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04/).
 2. Install Minikube by following Step 1- 5 in this [article](https://www.linuxtechi.com/how-to-install-minikube-on-ubuntu/)
-3. Change
+3. By default minikube will try to download image from docker registry. Point your shell to minikube's docker-daemon, run:
+>eval $(minikube -p minikube docker-env)
 
 ### Setting up
 Create a folder
