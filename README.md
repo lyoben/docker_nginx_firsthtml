@@ -57,7 +57,7 @@ REPOSITORY                                           TAG       IMAGE ID       CR
 simplehtml-nginx                                     v1        bf85b8e3e951   49 minutes ago   184MB
 ---snipped---
 ```
-Create pod definition file
+Create Pod definition file
 ```
 cat << EOF > simplehtml-pod.yaml
 apiVersion: v1
@@ -74,7 +74,7 @@ spec:
     imagePullPolicy: Never
 EOF
 ```
-Create service of type nodePort on port 30080
+Create Service of type nodePort on port 30080
 ```
 cat << EOF > simplehtml-svc.yaml
 apiVersion: v1
@@ -95,6 +95,9 @@ spec:
   type: NodePort
 EOF
 ```
+
+Check the Service endpoint is correctly assosciated to the Pod
+
 
 ```
 blow@abra:~/docker-nginx$ k get pod -o wide
