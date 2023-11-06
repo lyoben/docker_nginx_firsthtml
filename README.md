@@ -52,8 +52,10 @@ EOF
 ```
 Build docker image
 > docker build -t simplehtml-nginx:v1 .
-```
+
 Verify docker image is available
+
+```
 blow@abra:~/docker-nginx$ docker image ls
 REPOSITORY                                           TAG       IMAGE ID       CREATED          SIZE
 simplehtml-nginx                                     v1        bf85b8e3e951   49 minutes ago   184MB
