@@ -31,7 +31,7 @@ cat << EOF > index.html
   <body>
     <div class="container">
       <h1>Welcome to Docker nginx simple html!</h1>
-      <p> Visit <a href="url">https://github.com/lyoben</a> for more info.
+      <p> Visit <a href="https://github.com/lyoben/">https://github.com/lyoben</a> for more info.
       </p>
     </div>
   </body>
